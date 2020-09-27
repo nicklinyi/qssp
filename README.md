@@ -1,6 +1,6 @@
 # QSSP - Complete synthetic seismograms for a spherical earth
 
-**Notes: This is a modified version of the original code. 
+** Notes: This is a modified version of the original code. 
 
 ## What I have done?
 - add a Makefile to compile the code
