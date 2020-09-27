@@ -165,7 +165,7 @@
 #
 #   MODEL PARAMETERS
 #   ================
-# no    depth[km] vp[km/s]  vs[km/s]   ro[g/cm^3] qp         qs (set qp and qs to 10^6 if you want to swith off viscoelastic)
+# no    depth[km] vp[km/s]  vs[km/s]   ro[g/cm^3] qp         qs (set qp and qs to a very large value [e.g. 1.d8] if you want to swith off viscoelastic)
 #--------------------------------------------------------------------------------------------------------
   1     0.000    5.8000    3.2000    2.6000  1456.0  600.0
   2    15.000    5.8000    3.2000    2.6000  1456.0  600.0
