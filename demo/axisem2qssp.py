@@ -16,7 +16,7 @@ def qka2qp(qka, qmu, cp, cs):
 fname = '1dmodel_axisem.bm'
 fname2 = '1dmodel_axisem_qssp_noQ.txt'
 
-f2 = open(fname2,"a+")
+f2 = open(fname2,"w+")
 
 ii = 0
 with open(fname,'r') as f:
