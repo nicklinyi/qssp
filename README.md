@@ -1,6 +1,23 @@
 # QSSP - Complete synthetic seismograms for a spherical earth
 
 Notes: This is a modified version of the original code. 
+## How to run this code?
+### 1. compile
+First, you should change your directory to `$QSSPROOT/src`, where `$QSSPROOT` is the root path of this code. Then, you can run `make qssp` to compile the code. After that, you can run `make install`, which will put the binary executable program (`qssp`) to a folder named `$QSSPROOT/bin`.
+```
+$ cd src
+$ make qssp
+$ make install
+```
+
+### 2. run a demo
+In the `$QSSPROOT` folder, you can run the following command to get your first result.
+```
+$ mkdir GreenFunctions
+$ ./bin/qssp ./demo/qssp2017-fig01.inp
+```
+
+
 
 ## What I have done?
 - add a Makefile to compile the code
