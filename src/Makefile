@@ -14,8 +14,9 @@ moments.o      qpshkern.o    qpstart0g.o  ruku.o        transfs2t.o \
       qpsmat.o      qpstart2t.o  skipdoc.o
 
 
-install: qssp 
-	mv qssp ../bin
+install: qssp
+	mkdir ../bin
+	mv qssp ../bin/
 
 qssp: $(OBJECTS) qpmain.o
 	gfortran  $(OBJECTS) qpmain.o -o qssp
