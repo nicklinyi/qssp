@@ -13,19 +13,26 @@ legendre.o     qpqmodel.o    qpstart0a.o  qpwvint.o     taper.o \
 moments.o      qpshkern.o    qpstart0g.o  ruku.o        transfs2t.o \
       qpsmat.o      qpstart2t.o  skipdoc.o
 
+## if you have ifort, uncomment the next two lines
+#FC = ifort
+#FLAGS = -O4 -march=native -132 -zero -save
+
+# gfortran
+FC = gfortran
+FLAGS = -O3
 
 install: qssp
 	mkdir ../bin
 	mv qssp ../bin/
 
 qssp: $(OBJECTS) qpmain.o
-	gfortran  $(OBJECTS) qpmain.o -o qssp
+	$(FC) $(FLAGS)  $(OBJECTS) qpmain.o -o qssp
 
 qpmain.o : qpmain.f90
-	gfortran -c $<
+	$(FC) $(FLAGS) -c $<
 
 %.o : %.f
-	gfortran  -c  $< 
-
+	$(FC) $(FLAGS)  -c  $< 
+	
 clean:
 	rm -f *.o *.mod
