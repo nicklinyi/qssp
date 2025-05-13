@@ -1,6 +1,6 @@
 # QSSP - Complete synthetic seismograms for a spherical earth
 
-Notes: This is a modified version of the original code. 
+Notes: This is a modified version of the original code.  **The new version of QSSP can be found on https://github.com/RongjiangWang/QSSP_2024**
 ## How to run this code?
 ### 1. compile
 First, you should change your directory to `$QSSPROOT/src`, where `$QSSPROOT` is the root path of this code. Then, you can run `make qssp` to compile the code. After that, you can run `make install`, which will put the binary executable program (`qssp`) to a folder named `$QSSPROOT/bin`.
